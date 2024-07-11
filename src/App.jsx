@@ -7,6 +7,8 @@ import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
 
+  const basename = 'CustomerTransactionsRouteTest'
+
   const router = createBrowserRouter([
     {path: '/',element:<Layout />,children:[
         {path: '/', element: <CustomerTable/>},
@@ -15,8 +17,8 @@ function App() {
 
         {path:"*", element: <PageNotFound/>}
 
-    ]}
-  ])
+    ],}
+  ],{basename})
   return (
       <RouterProvider router={router} />
   );
