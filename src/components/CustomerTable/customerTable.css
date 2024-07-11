@@ -1,0 +1,12 @@
+.table-design-custom{
+    border: none;
+}
+
+.table-design-custom thead tr th{
+    border-width: 0;
+}
+
+.table-design-custom  tbody tr td{
+    border: none;
+    padding-top:25px ;
+}
